@@ -1,0 +1,51 @@
+ <html>
+
+<head>
+
+  <script>
+    function test() {
+      var firstName = document.getElementById("fname")
+      var lastName = document.getElementById("lname");
+      var phoneNumber = document.getElementById("phno");
+      if (firstName.value !== "shubh") {
+        // yaha pe not equal aayega 
+        // means ki jab tak naam shubh nahi hoga tab tak yeh alert show hoga
+        alert("Enter first name = shubh")
+        return;
+      } else if (lastName.value !== "jain") {
+        // yaha pe not equal aayega 
+        // means ki jab tak last name jain nahi hoga tab tak yeh alert show hoga
+        alert("Enter last name");
+        return;
+      } else if (phoneNumber.value === "") {
+        alert("enter phone number");
+        return
+      }
+
+      window.location.href = ("http://stpaul.eclassroomck.com/stplogin.aspx")
+    }
+  </script>
+</head>
+
+<body
+  background="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.labnol.org%2Finternet%2F101-useful-websites%2F18078%2F&psig=AOvVaw0PFHqsmPdtkZMSUPHrAzFe&ust=1613919995632000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiLw9Te-O4CFQAAAAAdAAAAABAD">
+
+  <h2>SCHOOL CLASSES</h2>
+
+  <form>
+    <!-- <form action="http://stpaul.eclassroomck.com/stplogin.aspx">  yeh nahi aayega yaha pe because hume function call karna hai-->
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+    <label for="phno">Phone number:</label><br>
+    <input type="text" id="phno" name="phno" required><br><br>
+    <!-- <input type="button" value="Submit"> isme onclick add karna hai kyuki hume function ko call karna hai-->
+    <input type="button" value="Submit" onclick="test()">
+  </form>
+
+  <p>If you want to open th website first please fill your details.
+  <p>
+</body>
+
+</html>
